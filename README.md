@@ -8,23 +8,23 @@ Installing Odoo 14 with one command.
 Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/elblasy33/odoo14-docker-sh/main/run.sh | sudo bash -s odoo-one 10015 20015
+curl -s https://raw.githubusercontent.com/elblasy33/odoo14-docker-sh/main/run.sh | sudo bash -s odoo14-one 10014 20014
 ```
 
-to set up first Odoo instance @ `localhost:10015` (default master password: `Elblasy2022@1234`)
+to set up first Odoo instance @ `localhost:10014` (default master password: `Elblasy2022@1234`)
 
 and
 
 ``` bash
-curl -s https://raw.githubusercontent.com/elblasy33/odoo14-docker-sh/main/run.sh | sudo bash -s odoo-two 11015 21015
+curl -s https://raw.githubusercontent.com/elblasy33/odoo14-docker-sh/main/run.sh | sudo bash -s odoo14-two 11014 21014
 ```
 
-to set up another Odoo instance @ `localhost:11015` (default master password: `Elblasy2022@1234`)
+to set up another Odoo instance @ `localhost:11014` (default master password: `Elblasy2022@1234`)
 
 Some arguments:
 * First argument (**odoo14-one**): Odoo deploy folder
-* Second argument (**10015**): Odoo port
-* Third argument (**20015**): live chat port
+* Second argument (**10014**): Odoo port
+* Third argument (**20014**): live chat port
 
 If `curl` is not found, install it:
 
@@ -41,11 +41,11 @@ Start the container:
 docker-compose up
 ```
 
-* Then open `localhost:10015` to access Odoo 15.0. If you want to start the server with a different port, change **10015** to another value in **docker-compose.yml**:
+* Then open `localhost:10014` to access Odoo 14.0. If you want to start the server with a different port, change **10014** to another value in **docker-compose.yml**:
 
 ```
 ports:
- - "10015:8069"
+ - "10014:8069"
 ```
 
 Run Odoo container in detached mode (be able to close terminal without stopping Odoo):
@@ -79,7 +79,7 @@ The **addons/** folder contains custom addons. Just put your custom addons if yo
 
 * To change Odoo configuration, edit file: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
-* Default database password (**admin_passwd**) is `mostafa@1234`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* Default database password (**admin_passwd**) is `Elblasy2022@1234`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
 # Odoo container management
 
@@ -121,10 +121,10 @@ server {
 
 # docker-compose.yml
 
-* odoo:15.0
+* odoo:14.0
 * postgres:14
 
-# Odoo 15 screenshots
+# Odoo 14 screenshots
 
 <img src="screenshots/2022-10-17_22h16_21.png" width="50%">
 
