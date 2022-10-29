@@ -126,7 +126,7 @@ server {
 
 # Odoo 14 screenshots
 
-<img src="screenshots/2022-10-17_22h16_21.png" width="50%">
+<img src="[screenshots/2022-10-17_22h16_21.png](https://raw.githubusercontent.com/hrmuwanika/odoo-15-docker-compose/be465f33f17074dc0022f2e7f36c95ddeb0a1920/screenshots/odoo-15-welcome-screenshot.png)" width="50%">
 
 <img src="screenshots/2022-10-17_22h16_30.png" width="100%">
 
