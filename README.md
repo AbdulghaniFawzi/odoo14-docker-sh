@@ -11,7 +11,7 @@ Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https
 curl -s https://raw.githubusercontent.com/elblasy33/odoo14-docker-sh/main/run.sh | sudo bash -s odoo-one 10015 20015
 ```
 
-to set up first Odoo instance @ `localhost:10015` (default master password: `mostafa@1234`)
+to set up first Odoo instance @ `localhost:10015` (default master password: `Elblasy2022@1234`)
 
 and
 
